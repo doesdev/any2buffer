@@ -3,7 +3,7 @@
 // setup
 const fs = require('fs')
 const b64Rgx = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)$/
-const isHex = (v) => parseInt(v || '', 16).toString(16) === v.toLowerCase()
+const isHex = (v) => parseInt(v, 16).toString(16) === v.toLowerCase()
 const direct = {
   utf8: true,
   base64: true,
@@ -26,7 +26,7 @@ function any2buffer (input, type) {
     let strIn = (input || '').toString()
     if (type && direct[type]) return resolve(Buffer.from(input, type))
     if (b64Rgx.test(strIn)) return resolve(Buffer.from(strIn, 'base64'))
-    if (isHex(input)) return resolve(Buffer.from(input, 'hex'))
+    if (isHex(input || '')) return resolve(Buffer.from(input, 'hex'))
     fs.readFile(strIn, (err, data) => {
       if (err) return resolve(Buffer.from(strIn, 'utf8'))
       return resolve(data)

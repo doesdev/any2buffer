@@ -2,10 +2,14 @@
 
 > Pass anything, get Node buffer back
 
-* Note - If no type is passed and we can't guess the type we'll use fs to
+* Note - If no encoding is passed and we can't guess the encoding we'll use fs to
 see if it's a file path. Obviously this will affect performance, so if you know
-what type it will be or it is something we can assert (base64 or hex) then
+what encoding it is or it is something we can assert (base64 or hex) then
 you can avoid touching the file system.
+
+* Other note - If no encoding is given, we can't assert the encoding, and it's not a
+valid file path then we will default the buffer to UTF-8. Pull requests for other
+encoding assertions are welcome, currently we only assert base64 and hex.
 
 ## install
 
@@ -15,7 +19,7 @@ $ npm install --save any2buffer
 
 ## api
 - **dataToConvertToBuffer** *(anything - required)*
-- **dataType** *(string - optional) [ex. 'binary', 'base64', 'path', etc...]*
+- **encoding** *(string - optional) [ex. 'binary', 'base64', 'path', etc...]*
 
 ## usage
 
