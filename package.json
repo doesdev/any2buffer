@@ -1,0 +1,21 @@
+{
+  "name": "any2buffer",
+  "version": "1.0.0",
+  "description": "Pass anything, get Node buffer back",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://githube.com/doesdev/any2buffer.git"
+  },
+  "keywords": [
+    "buffer"
+  ],
+  "author": "Andrew Carpenter (https://github.com/doesdev)",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.17.0"
+  }
+}
