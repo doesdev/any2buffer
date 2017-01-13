@@ -15,7 +15,7 @@ $ npm install --save any2buffer
 
 ## api
 - **dataToConvertToBuffer** *(anything - required)*
-- **dataType** *(string - optional) [ex. 'binary', 'base64', 'path', etc...] *
+- **dataType** *(string - optional) [ex. 'binary', 'base64', 'path', etc...]*
 
 ## usage
 
