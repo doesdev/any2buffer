@@ -1,6 +1,6 @@
 {
   "name": "any2buffer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Pass anything, get Node buffer back",
   "files": ["index.js"],
   "main": "index.js",

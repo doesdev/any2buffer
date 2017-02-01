@@ -14,7 +14,9 @@ const direct = {
   binary: true,
   usc2: true
 }
-const getBuf = (d, e) => Buffer.from ? Buffer.from(d, e) : new Buffer(d, e)
+let fromWorks
+try { fromWorks = !!Buffer.from('x', 'utf8') } catch (ex) {}
+let getBuf = (d, e) => fromWorks ? Buffer.from(d, e) : new Buffer(d, e)
 
 // export
 module.exports = any2buffer
