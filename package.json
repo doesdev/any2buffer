@@ -1,10 +1,11 @@
 {
   "name": "any2buffer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pass anything, get Node buffer back",
+  "files": ["index.js"],
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava --verbose"
   },
   "repository": {
     "type": "git",
