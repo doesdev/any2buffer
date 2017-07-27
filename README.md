@@ -1,4 +1,4 @@
-# any2buffer [![NPM version](https://badge.fury.io/js/any2buffer.svg)](https://npmjs.org/package/any2buffer)   [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+# any2buffer [![NPM version](https://badge.fury.io/js/any2buffer.svg)](https://npmjs.org/package/any2buffer)   [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)   [![Dependency Status](https://dependencyci.com/github/doesdev/any2buffer/badge)](https://dependencyci.com/github/doesdev/any2buffer)
 
 > Pass anything, get Node buffer back
 
