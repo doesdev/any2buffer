@@ -2,6 +2,8 @@
 
 > Pass anything, get Node buffer back
 
+## IF [#3](https://github.com/doesdev/any2buffer/issues/3) or [#4](https://github.com/doesdev/any2buffer/issues/4) are still open when you get here, turn away. This module isn't reliable until those two items are closed. Sorry.
+
 * Note - If no encoding is passed and we can't guess the encoding we'll use fs to
 see if it's a file path. Obviously this will affect performance, so if you know
 what encoding it is or it is something we can assert (base64 or hex) then
